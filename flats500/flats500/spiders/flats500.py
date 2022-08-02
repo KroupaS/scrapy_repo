@@ -8,7 +8,7 @@ class Flats500Spider(scrapy.Spider):
         'USER_AGENT' : 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'
     }
     allowed_domains = ['www.sreality.cz']
-    start_urls = ['https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_type_cb=1&per_page=20']
+    start_urls = ['https://www.sreality.cz/api/cs/v2/estates?category_main_cb=1&category_type_cb=1&per_page=500']
 
     def parse(self, response):
         flats_json = response.json()

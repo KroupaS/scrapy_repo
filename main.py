@@ -36,7 +36,7 @@ class FlatsHTTP(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/html; charset=utf-8")
         self.end_headers()
-        print("GET RESPONSE", flush = True)
+        #print("GET RESPONSE", flush = True)
 
         f = open('./index.html', encoding="utf-8")
         for line in f:
